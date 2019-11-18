@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IndoorAir | Update Instrument</title>
+</head>
+<body>
+    <script>
+        {% include "instrument/update.js" %}
+    </script>
+
+    <h1>Update Instrument</h1>
+    <p>
+    ID:
+    <input id="id" name="id" type="text" readonly></input>
+    </p>
+    <p>
+    Name:
+    <input id="name" name="name" type="text"></input>
+    </p>
+
+    <p>
+    <button type="button" onclick="onBackClick()">Back</button>
+    <button type="button" onclick="onSubmitClick()">Submit</button>
+
+    </p>
+</body>
+</html>

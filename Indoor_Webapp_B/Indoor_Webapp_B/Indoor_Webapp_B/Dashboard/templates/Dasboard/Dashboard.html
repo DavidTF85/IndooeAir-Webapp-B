@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IndoorAir | Dashboard</title>
+</head>
+<body>
+    <script>
+        {% include "Dashboard/Dashboard.js" %}
+    </script>
+
+                     <h1>Dashboard</h1>
+             <h2>Welcome to the Dashboard </h2>
+    <p> <h2>This is the information of  your device</h2></p>
+
+    <p>Average Temperature:</p>
+    <p id="Average_Temperature">---</p>
+    <p>Average Humidity:</p>
+    <p id="Average_Humidity">---</p>
+    <p>Average CO2:</p>
+    <p id="Average_CO2">---</p>
+    <p>Average Pressure:</p>
+    <p id="Average_Pressure">---</p>
+    <p>Average TVOC:</p>
+    <p id="Average_TVCO">---</p>
+    <br />
+    <a href="{% url 'instrument_list_page' %}">List Instruments</a>
+    <a href="{% url 'profile_retrieve_page' %}">View Profile</a>
+
+    <button onclick="onLogoutClick();">Logout</button>
+
+</body>
+</html>

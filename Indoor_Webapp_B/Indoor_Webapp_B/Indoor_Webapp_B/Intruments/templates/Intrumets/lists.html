@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IndoorAir | Lists of Instruments </title>
+
+<style>table, th, td {border: 1px solid black;}</style></head>
+
+<body>
+    <script>
+        {% include "instruments/lists.js" %}
+    </script>
+
+    <h1>this is the lists of your Instrument(s) </h1>
+
+    <table style="width:100%" id="instruments_lists"></table>
+
+
+    <p>
+      <button type ="button" onclick ="CreateNewInstrumentClick()">Create a new instrument</button>
+    </p>
+
+    <p>
+        <button type="button" onclick="onBackClick()">Go Back</button>
+    </p>
+
+</body>
+</html>

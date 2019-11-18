@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IndoorAir | Retrieve Instruments</title>
+</head>
+<body>
+    <script>
+        {% include "instruments/retrieve.js" %}
+    </script>
+
+    <h1>Retrieve Instruments</h1>
+
+    <p>
+    ID:
+    <input id="id" name="id" type="text" readonly></input></p>
+
+  <p>
+    Name:
+    <input id="name" name="name" type="text" readonly></input>
+    </p>
+
+    <p>
+    <button type="button" onclick="onBackClick()">Go Back</button>
+    <button type="button" onclick="onUpdateClick()">Update data</button> </p>
+
+    <p>
+    <button type="button" onclick="SensorDetailsClick()">Sensor Details</button>
+    </p>
+</body>
+</html>
